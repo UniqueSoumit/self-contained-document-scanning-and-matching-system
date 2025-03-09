@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Scanning System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Document Scanning and Matching System</h1>
+        
+        <!-- User Registration and Login -->
+        <div id="auth-section">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button onclick="login()">Login</button>
+            <button onclick="register()">Register</button>
+        </div>
+        
+        <!-- Profile and Document Upload -->
+        <div id="user-section" style="display:none;">
+            <h2>Profile</h2>
+            <div id="profile-info"></div>
+            <h3>Upload Document</h3>
+            <input type="file" id="document-upload" required>
+            <button onclick="uploadDocument()">Upload</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
